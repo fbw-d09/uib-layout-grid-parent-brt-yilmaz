@@ -1,4 +1,22 @@
+* {
+ 
+  box-sizing: border-box;
+}
+
 img {
     width: 100%;
-  }
-  
+}
+
+.container,.container2 {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 50px;
+  border: 2px solid red;
+
+}
+
+.container2 {
+  grid-template-columns: minmax(100px,350px) 1fr minmax(100px,350px)
+
+}
